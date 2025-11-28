@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <script>
+      // This script is the fix for the 404 error on direct URL access.
+      // It forces the static host (GitHub Pages) to load the main index.html file,
+      // which then allows the React router to take over and handle the path.
+      
+      // Calculate the relative path to the root index.html
+      var segmentCount = (window.location.pathname.split('/').length - 1);
+      var relativePath = segmentCount > 0 ? '../'.repeat(segmentCount - 1) : '';
+      
+      // Redirect to the main application entry point
+      window.location.replace(relativePath + 'index.html');
+    </script>
+  </head>
+  <body>
+    <!-- Fallback content in case JavaScript is disabled -->
+    <p>Redirecting...</p>
+    <a href="/">Go to home page</a>
+  </body>
+</html>

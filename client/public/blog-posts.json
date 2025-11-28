@@ -1,0 +1,68 @@
+[
+  {
+    "slug": "data-visualization-best-practices",
+    "title": "Data Visualization Best Practices for Business Analytics",
+    "excerpt": "Learn the essential principles of creating effective data visualizations that communicate insights clearly and drive decision-making.",
+    "date": "2024-03-15",
+    "author": "Madhu Bhattarai",
+    "readTime": "8 min read",
+    "category": "Data Visualization",
+    "tags": ["Tableau", "Power BI", "Best Practices"],
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop"
+  },
+  {
+    "slug": "python-pandas-data-cleaning",
+    "title": "Mastering Data Cleaning with Python Pandas",
+    "excerpt": "A comprehensive guide to cleaning and preprocessing data using Pandas, including handling missing values, outliers, and data transformation.",
+    "date": "2024-03-10",
+    "author": "Madhu Bhattarai",
+    "readTime": "12 min read",
+    "category": "Python",
+    "tags": ["Python", "Pandas", "Data Cleaning"],
+    "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=400&fit=crop"
+  },
+  {
+    "slug": "sql-optimization-techniques",
+    "title": "SQL Query Optimization Techniques for Large Datasets",
+    "excerpt": "Discover advanced SQL optimization strategies to improve query performance and handle large-scale data efficiently.",
+    "date": "2024-03-05",
+    "author": "Madhu Bhattarai",
+    "readTime": "10 min read",
+    "category": "SQL",
+    "tags": ["SQL", "Performance", "Database"],
+    "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800&h=400&fit=crop"
+  },
+  {
+    "slug": "machine-learning-feature-engineering",
+    "title": "Feature Engineering Strategies for Machine Learning",
+    "excerpt": "Explore practical feature engineering techniques to improve machine learning model performance and predictive accuracy.",
+    "date": "2024-02-28",
+    "author": "Madhu Bhattarai",
+    "readTime": "15 min read",
+    "category": "Machine Learning",
+    "tags": ["Machine Learning", "Python", "Feature Engineering"],
+    "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=400&fit=crop"
+  },
+  {
+    "slug": "tableau-dashboard-design",
+    "title": "Creating Interactive Dashboards in Tableau",
+    "excerpt": "Step-by-step guide to building engaging and interactive Tableau dashboards that tell compelling data stories.",
+    "date": "2024-02-20",
+    "author": "Madhu Bhattarai",
+    "readTime": "9 min read",
+    "category": "Data Visualization",
+    "tags": ["Tableau", "Dashboard", "Analytics"],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop"
+  },
+  {
+    "slug": "statistical-analysis-fundamentals",
+    "title": "Statistical Analysis Fundamentals for Data Analysts",
+    "excerpt": "Understanding core statistical concepts and methods essential for conducting meaningful data analysis.",
+    "date": "2024-02-15",
+    "author": "Madhu Bhattarai",
+    "readTime": "11 min read",
+    "category": "Statistics",
+    "tags": ["Statistics", "Analysis", "Fundamentals"],
+    "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=800&h=400&fit=crop"
+  }
+]

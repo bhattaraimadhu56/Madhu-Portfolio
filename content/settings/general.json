@@ -1,0 +1,332 @@
+{
+  "metadata": {
+    "siteTitle": "Madhu Bhattarai - Data Analyst Portfolio",
+    "siteDescription": "Professional portfolio showcasing data analytics projects, visualizations, and insights. Specializing in business intelligence, predictive analytics, and data-driven decision making.",
+    "siteUrl": "https://www.madhudata.com",
+    "faviconPath": "/images/logo.png",
+    "appleTouchIconPath": "/images/logo.png"
+  },
+
+  "branding": {
+    "primaryColor": "#0066FF",
+    "secondaryColor": "#7C3AED",
+    "accentColor": "#00D9FF",
+    "backgroundColor": "#FFFFFF",
+    "textColor": "#1F2937",
+    "mutedTextColor": "#6B7280",
+    "borderColor": "#E5E7EB",
+    "fontFamily": "Inter, sans-serif",
+    "headingFontFamily": "Space Grotesk, sans-serif"
+  },
+
+  "analytics": {
+    "enabled": false,
+    "provider": "umami",
+    "endpointUrl": "https://analytics.example.com/umami",
+    "websiteId": "your-website-id-here"
+  },
+
+  "header": {
+    "appName": "Madhu Portfolio",
+    "appLogo": "/images/logo.png",
+    "navigationLinks": [
+      { "label": "Home", "href": "/" },
+      { "label": "About", "href": "/about" },
+      { "label": "Portfolio", "href": "/portfolio" },
+      { "label": "Blog", "href": "/blog" },
+      { "label": "Contact", "href": "/contact" }
+    ],
+    "enableThemeToggle": true,
+    "enableMobileMenu": true
+  },
+
+  "profile": {
+    "fullName": "Madhu Bhattarai",
+    "title": "Data Analyst | Business Intelligence Specialist",
+    "email": "info@madhudata.com",
+    "location": "Your Location",
+    "profileImage": "/images/profile-placeholder.jpg",
+    "bannerImage": "/images/banner-background.jpg",
+    "onlineStatus": true,
+    "statusColor": "#10B981"
+  },
+
+  "home": {
+    "heroTagline": "Welcome to My Portfolio",
+    "heroHeading": "Transforming Data into Actionable Insights",
+    "heroSubheading": "Data Analyst specializing in business intelligence, predictive analytics, and data visualization",
+    // Lines 58-61 in content/settings/general.json
+"heroButtons": [
+  { "label": "View My Work", "href": "/portfolio", "variant": "primary" },
+  { "label": "Get in Touch", "href": "/contact", "variant": "outline" }
+],
+
+    "stats": [
+      { "label": "Years Experience", "value": "5+" },
+      { "label": "Data Projects", "value": "50+" },
+      { "label": "Insights Generated", "value": "1000+" }
+    ],
+    "skillsTitle": "Technical Skills",
+    "skillsSubtitle": "Proficient in a wide range of data analysis tools and technologies",
+    "skills": [
+      { "name": "Python", "icon": "🐍" },
+      { "name": "SQL", "icon": "🗄️" },
+      { "name": "Tableau", "icon": "📊" },
+      { "name": "Power BI", "icon": "📈" },
+      { "name": "Excel", "icon": "📑" },
+      { "name": "R", "icon": "📉" },
+      { "name": "Machine Learning", "icon": "🤖" },
+      { "name": "Statistics", "icon": "📐" }
+    ],
+    "achievementsTitle": "Key Achievements",
+    "achievementsSubtitle": "Delivering excellence in data analytics and business intelligence",
+    "achievements": [
+      {
+        "icon": "award",
+        "title": "Certified Data Analyst",
+        "description": "Professional certification in data analytics"
+      },
+      {
+        "icon": "users",
+        "title": "50+ Projects Delivered",
+        "description": "Successfully completed data analysis projects"
+      },
+      {
+        "icon": "target",
+        "title": "98% Client Satisfaction",
+        "description": "Consistently exceeding expectations"
+      }
+    ],
+    "ctaTitle": "Let's Work Together",
+    "ctaDescription": "Looking for a data analyst to help drive your business decisions? Let's discuss how I can help transform your data into insights.",
+    "ctaButtonLabel": "Start a Conversation",
+    "ctaButtonHref": "/contact"
+  },
+
+  "about": {
+    "pageTitle": "About Me",
+    "pageSubtitle": "Passionate data analyst with a proven track record of transforming complex datasets into actionable business insights",
+    "resumeFileName": "Madhu_Bhattarai_Resume.pdf",
+    "personalStory": {
+      "title": "My Story",
+      "content": "I'm a dedicated data analyst with a passion for uncovering insights from complex datasets. With over 5 years of experience in business intelligence and data visualization, I've helped numerous organizations make data-driven decisions that drive growth and efficiency.\n\nMy journey in data analytics began with a fascination for how data can tell stories and reveal hidden patterns. Since then, I've developed expertise in transforming raw data into actionable insights using industry-leading tools and methodologies.\n\nWhen I'm not analyzing data, you can find me exploring new data visualization techniques, contributing to open-source projects, or mentoring aspiring data analysts."
+    },
+    "workExperience": {
+      "title": "Work Experience",
+      "items": [
+        {
+          "position": "Senior Data Analyst",
+          "company": "Your Company Name",
+          "duration": "2022 - Present",
+          "description": "Leading data analysis initiatives, creating dashboards, and providing strategic insights to drive business decisions. Responsible for designing and implementing analytics solutions that support executive-level decision making."
+        },
+        {
+          "position": "Data Analyst",
+          "company": "Previous Company",
+          "duration": "2020 - 2022",
+          "description": "Analyzed business data, created visualizations, and supported decision-making processes. Developed automated reporting solutions that reduced manual reporting time by 60%."
+        },
+        {
+          "position": "Junior Data Analyst",
+          "company": "First Company",
+          "duration": "2019 - 2020",
+          "description": "Assisted in data collection, cleaning, and basic analysis tasks. Learned foundational SQL and data visualization principles."
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "items": [
+        {
+          "degree": "Bachelor of Science in Data Science",
+          "school": "Your University",
+          "year": "2019",
+          "details": "Graduated with honors. Specialized in statistical analysis and machine learning."
+        },
+        {
+          "degree": "Data Analytics Certification",
+          "school": "Online Platform",
+          "year": "2020",
+          "details": "Advanced data analysis and visualization. Completed capstone project on predictive analytics."
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certifications",
+      "items": [
+        {
+          "name": "Certified Data Analyst",
+          "issuer": "Professional Organization",
+          "year": "2021"
+        },
+        {
+          "name": "Advanced SQL Certification",
+          "issuer": "Online Platform",
+          "year": "2022"
+        },
+        {
+          "name": "Tableau Desktop Specialist",
+          "issuer": "Tableau",
+          "year": "2023"
+        }
+      ]
+    }
+  },
+
+  "portfolio": {
+    "pageTitle": "Portfolio",
+    "pageSubtitle": "Showcase of my data analysis projects and visualizations",
+    "emptyMessage": "No projects yet. Check back soon!",
+    "filterLabel": "Filter by skill:",
+    "projects": [
+      {
+        "id": 1,
+        "title": "Sales Performance Dashboard",
+        "description": "Interactive Tableau dashboard analyzing quarterly sales performance across multiple regions. Includes KPI tracking, trend analysis, and predictive forecasting. Helped identify growth opportunities that increased revenue by 25%.",
+        "image": "/images/project1.jpg",
+        "tags": ["Tableau", "SQL", "Business Intelligence"],
+        "liveUrl": "https://example.com/sales-dashboard",
+        "githubUrl": "https://github.com/bhattaraimadhu56/sales-dashboard"
+      },
+      {
+        "id": 2,
+        "title": "Customer Segmentation Analysis",
+        "description": "Machine learning project using Python and scikit-learn to segment customers into 5 distinct groups. Analysis revealed high-value customer patterns and enabled targeted marketing campaigns. Resulted in 35% improvement in campaign ROI.",
+        "image": "/images/project2.jpg",
+        "tags": ["Python", "Machine Learning", "Data Science"],
+        "liveUrl": "https://example.com/customer-segmentation",
+        "githubUrl": "https://github.com/bhattaraimadhu56/customer-segmentation"
+      },
+      {
+        "id": 3,
+        "title": "Financial Data Analysis",
+        "description": "Comprehensive analysis of financial data using Excel and Power BI. Created automated reporting system that consolidates data from multiple sources. Reduced reporting time from 2 days to 2 hours.",
+        "image": "/images/blog1.jpg",
+        "tags": ["Power BI", "Excel", "Financial Analysis"],
+        "liveUrl": "https://example.com/financial-analysis",
+        "githubUrl": "https://github.com/bhattaraimadhu56/financial-analysis"
+      },
+      {
+        "id": 4,
+        "title": "Website Traffic Analytics",
+        "description": "In-depth analysis of website traffic patterns using Google Analytics and Python. Identified key user behaviors and conversion bottlenecks. Recommendations led to 40% increase in conversion rate.",
+        "image": "/images/blog2.jpg",
+        "tags": ["Google Analytics", "Python", "Web Analytics"],
+        "liveUrl": "https://example.com/traffic-analytics",
+        "githubUrl": "https://github.com/bhattaraimadhu56/traffic-analytics"
+      }
+    ]
+  },
+
+  "blog": {
+    "pageTitle": "Blog",
+    "pageSubtitle": "Insights, tutorials, and thoughts on data analytics",
+    "emptyMessage": "No blog posts yet. Check back soon!",
+    "filterLabel": "Filter by category:",
+    "readMoreLabel": "Read More",
+    "posts": [
+      {
+        "id": 1,
+        "title": "Data Visualization Best Practices: Creating Dashboards That Tell Stories",
+        "slug": "data-visualization-best-practices",
+        "excerpt": "Learn how to create effective data visualizations that communicate insights clearly. This comprehensive guide covers design principles, color theory, and best practices for dashboard creation.",
+        "date": "March 15, 2024",
+        "image": "/images/blog1.jpg",
+        "tags": ["Data Visualization", "Dashboard Design", "Best Practices"],
+        "category": "Tutorial",
+        "content": "# Data Visualization Best Practices\n\nData visualization is one of the most powerful tools in a data analyst's toolkit. When done right, it can transform complex datasets into clear, actionable insights. In this article, we'll explore the fundamental principles of effective data visualization.\n\n## Why Visualization Matters\n\nHumans are visual creatures. We process visual information 60,000 times faster than text. This is why data visualization is so critical in communicating analytical findings.\n\n## Key Principles\n\n### 1. Clarity First\nYour visualization should be immediately understandable. Avoid unnecessary complexity and focus on the core message.\n\n### 2. Appropriate Chart Types\nChoose the right chart type for your data:\n- **Bar charts** for comparing categories\n- **Line charts** for trends over time\n- **Scatter plots** for relationships\n- **Pie charts** for parts of a whole (use sparingly)\n\n### 3. Color Theory\nUse colors strategically:\n- Limit to 3-4 main colors\n- Use color to highlight important data\n- Ensure accessibility for colorblind viewers\n- Maintain consistency across dashboards\n\n### 4. Minimize Clutter\nRemove unnecessary elements:\n- Eliminate decorative elements\n- Remove redundant labels\n- Use white space effectively\n- Keep gridlines minimal\n\n## Practical Examples\n\nWhen creating dashboards, always ask yourself: \"What is the key insight I want to communicate?\" Design your visualization around that core message.\n\n## Conclusion\n\nEffective data visualization is both an art and a science. By following these principles and continuously practicing, you'll create visualizations that truly communicate your data's story."
+      },
+      {
+        "id": 2,
+        "title": "SQL Optimization Techniques: Writing Faster Queries",
+        "slug": "sql-optimization-techniques",
+        "excerpt": "Discover advanced SQL optimization techniques to write faster, more efficient queries. Learn about indexing, query execution plans, and common performance pitfalls.",
+        "date": "March 10, 2024",
+        "image": "/images/blog2.jpg",
+        "tags": ["SQL", "Database", "Performance"],
+        "category": "Tutorial",
+        "content": "# SQL Optimization Techniques\n\nAs data analysts, we spend a significant portion of our time writing SQL queries. Slow queries can bottleneck your entire analytics pipeline. Let's explore techniques to optimize your SQL code.\n\n## Understanding Query Performance\n\nBefore optimizing, you need to understand how your database executes queries. Most databases provide execution plans that show:\n- Table scans vs index seeks\n- Join operations\n- Sorting and aggregation costs\n\n## Indexing Strategies\n\n### Single Column Indexes\nCreate indexes on columns frequently used in WHERE clauses:\n\n```sql\nCREATE INDEX idx_customer_id ON orders(customer_id);\n```\n\n### Composite Indexes\nFor queries with multiple WHERE conditions:\n\n```sql\nCREATE INDEX idx_order_date_status ON orders(order_date, status);\n```\n\n## Query Optimization Tips\n\n1. **Use SELECT specific columns** instead of SELECT *\n2. **Filter early** with WHERE clauses\n3. **Use JOINs** instead of subqueries when possible\n4. **Avoid functions** on indexed columns in WHERE clauses\n5. **Batch operations** for large data modifications\n\n## Common Mistakes\n\n- Using LIKE with leading wildcards\n- Joining on functions or expressions\n- Not using appropriate data types\n- Missing indexes on foreign keys\n\n## Monitoring and Tuning\n\nRegularly monitor query performance and identify slow queries using:\n- Database logs\n- Query execution plans\n- Performance monitoring tools\n\n## Conclusion\n\nSQL optimization is an ongoing process. By understanding these principles and regularly reviewing your queries, you'll significantly improve your database performance."
+      },
+      {
+        "id": 3,
+        "title": "Python for Data Analysis: Essential Libraries and Techniques",
+        "slug": "python-data-analysis",
+        "excerpt": "A comprehensive guide to Python libraries for data analysis. Learn about pandas, NumPy, and matplotlib, and how to use them effectively in your analytics workflow.",
+        "date": "March 5, 2024",
+        "image": "/images/project1.jpg",
+        "tags": ["Python", "Data Analysis", "Programming"],
+        "category": "Tutorial",
+        "content": "# Python for Data Analysis\n\nPython has become the de facto language for data analysis. In this guide, we'll explore the essential libraries and techniques every data analyst should know.\n\n## Essential Libraries\n\n### Pandas\nPandas is the foundation of data analysis in Python. It provides:\n- DataFrames for tabular data\n- Data cleaning and transformation\n- Time series functionality\n- I/O tools for various formats\n\n### NumPy\nNumPy provides:\n- N-dimensional arrays\n- Mathematical operations\n- Linear algebra functions\n- Random number generation\n\n### Matplotlib\nMatplotlib enables:\n- Static visualizations\n- Publication-quality plots\n- Customizable styling\n- Integration with Jupyter notebooks\n\n## Data Cleaning Workflow\n\n1. **Load data** with pandas\n2. **Explore structure** with info() and describe()\n3. **Handle missing values** with dropna() or fillna()\n4. **Remove duplicates** with drop_duplicates()\n5. **Validate data types** and convert as needed\n6. **Detect outliers** using statistical methods\n\n## Analysis Techniques\n\n### Descriptive Statistics\n```python\ndf.describe()  # Summary statistics\ndf.corr()      # Correlation matrix\n```\n\n### Grouping and Aggregation\n```python\ndf.groupby('category').agg({'sales': 'sum', 'quantity': 'mean'})\n```\n\n### Time Series Analysis\n```python\ndf.set_index('date').resample('M').sum()  # Monthly aggregation\n```\n\n## Best Practices\n\n- Use meaningful variable names\n- Document your code with comments\n- Create reusable functions\n- Use version control for your scripts\n- Test your code regularly\n\n## Conclusion\n\nMastering Python for data analysis opens up countless possibilities. Start with these fundamentals and continue learning advanced techniques as you grow."
+      }
+    ]
+  },
+
+  "contact": {
+    "pageTitle": "Get in Touch",
+    "pageSubtitle": "Have a question or want to work together? I'd love to hear from you!",
+    "formTitle": "Send me a message",
+    "formDescription": "Fill out the form below and I'll get back to you as soon as possible.",
+    "formFields": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Message"
+    },
+    "submitButton": "Send Message",
+    "successMessage": "Thank you for your message! I'll get back to you soon.",
+    "errorMessage": "Something went wrong. Please try again.",
+    "formspreeEndpoint": "https://formspree.io/f/YOUR_FORM_ID",
+    "contactInfo": [
+      {
+        "icon": "mail",
+        "label": "Email",
+        "value": "info@madhudata.com",
+        "href": "mailto:info@madhudata.com"
+      },
+      {
+        "icon": "mappin",
+        "label": "Location",
+        "value": "Your Location",
+        "href": null
+      },
+      {
+        "icon": "linkedin",
+        "label": "LinkedIn",
+        "value": "linkedin.com/in/madhu-bhattarai",
+        "href": "https://linkedin.com/in/madhu-bhattarai"
+      },
+      {
+        "icon": "github",
+        "label": "GitHub",
+        "value": "github.com/bhattaraimadhu56",
+        "href": "https://github.com/bhattaraimadhu56"
+      }
+    ]
+  },
+
+  "footer": {
+    "companyName": "Madhu Bhattarai",
+    "companyDescription": "Transforming data into actionable insights. Passionate about analytics, visualization, and storytelling with data.",
+    "quickLinks": [
+      { "label": "Home", "href": "/" },
+      { "label": "About", "href": "/about" },
+      { "label": "Portfolio", "href": "/portfolio" },
+      { "label": "Blog", "href": "/blog" },
+      { "label": "Contact", "href": "/contact" }
+    ],
+    "socialLinks": [
+      { "icon": "github", "href": "https://github.com/bhattaraimadhu56", "label": "GitHub" },
+      { "icon": "linkedin", "href": "https://linkedin.com/in/madhu-bhattarai", "label": "LinkedIn" },
+      { "icon": "twitter", "href": "https://twitter.com/madhudata", "label": "Twitter" },
+      { "icon": "mail", "href": "mailto:info@madhudata.com", "label": "Email" }
+    ],
+    "copyrightText": "© 2025 Madhu Bhattarai. All rights reserved.",
+    "buildInfo": "Built with React & Tailwind CSS"
+  },
+
+  "seo": {
+    "keywords": "data analyst, business intelligence, data visualization, analytics, data science",
+    "author": "Madhu Bhattarai",
+    "ogImage": "/images/og-image.jpg"
+  }
+}
