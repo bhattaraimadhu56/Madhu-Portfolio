@@ -17,20 +17,38 @@ jobs:
         with:
           node-version: '20'
           
+      # --- FIX: Use pnpm for installation ---
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8 # Using a stable version of pnpm
+          run_install: false
+          
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "PNPM_CACHE_STORE=$(pnpm store path)" >> $GITHUB_ENV
+          
+      - name: Setup pnpm cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.PNPM_CACHE_STORE }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+            
+      - name: Install dependencies (using pnpm)
+        run: pnpm install --frozen-lockfile
       
-      - name: Install dependencies (using npm)
-        # Installs dependencies based on package.json. 
-        # The --no-save flag prevents npm from trying to update the pnpm-lock.yaml file.
-        run: npm install --no-save --force
-      
-      - name: Build website
-        # Uses the static-only build script defined in package.json
-        run: npm run build:gh-pages
+      - name: Build website (using pnpm)
+        # Assuming your build script is defined in package.json
+        run: pnpm run build:gh-pages
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          # The path should point to the output directory of your build script
+          path: './dist' 
   
   deploy:
     needs: build
