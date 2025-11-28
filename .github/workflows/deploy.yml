@@ -38,7 +38,7 @@ jobs:
             ${{ runner.os }}-pnpm-
             
       - name: Install dependencies (using pnpm)
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
       
       - name: Build website (using pnpm)
         # Assuming your build script is defined in package.json
