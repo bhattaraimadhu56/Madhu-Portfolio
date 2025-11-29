@@ -54,3 +54,10 @@ collections:
           - {label: "Bio", name: "bio", widget: "text"}
           - {label: "Skills", name: "skills", widget: "list"}
           - {label: "Content", name: "body", widget: "markdown"}
+
+
+
+          # Final check
+
+
+          # Final check
