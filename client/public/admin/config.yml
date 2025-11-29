@@ -2,12 +2,10 @@ backend:
   name: github
   repo: bhattaraimadhu56/Madhu-Portfolio
   branch: main
-  base_url: https://api.netlify.com
-  #  for netlify cms purpose
-  # --- ADD THIS LINE ---
-  identity_url: https://madhudatacom.netlify.app/.netlify/identity
-  auth_scope: repo
-  auth_type: implicit
+  base_url: https://madhu-cms-auth.bhattaraimadhu56.workers.dev
+  auth_type: pkce
+  
+  
 
 media_folder: "client/public/images"
 public_folder: "/images"
