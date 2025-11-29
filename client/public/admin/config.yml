@@ -5,6 +5,7 @@ backend:
   name: github
   repo: bhattaraimadhu56/Madhu-Portfolio
   branch: main
+  base_url: https://api.github.com/
 
 
 
