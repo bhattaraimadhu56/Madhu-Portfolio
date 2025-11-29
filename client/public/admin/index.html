@@ -5,14 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
   
-  <!-- 1. Load the Identity Widget script -->
+  <!-- Identity Widget (not needed for GitHub OAuth, but keeping for compatibility) -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <!-- 2. Load the Decap CMS script with the explicit config path -->
-  <script 
-    src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"
-    data-config="/config.yml"
-  ></script>
+  <!-- Load Decap CMS - it will look for config.yml in the same directory -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
