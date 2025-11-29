@@ -8,19 +8,16 @@
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </head>
 <body>
-  <!-- CRITICAL FIX: Add the root element for the CMS to mount onto -->
-  <div id="cms-root"></div>
+  <!-- CRITICAL FIX: Add the root element with the explicit data-cms-root attribute -->
+  <div id="cms-root" data-cms-root></div>
   
-  <!-- CRITICAL FIX: Ensure CMS.init( ) runs ONLY after the DOM is fully loaded -->
+  <!-- CRITICAL FIX: Initialize the CMS after the element is defined -->
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      if (window.CMS) {
-        window.CMS.init({
-          // Optionally specify the element ID if it's not the default
-          // config: { local_backend: true }, // Example of passing config
-        });
-      }
-    });
+    // This script runs after the <div> is defined, which should be enough.
+    // The CMS will now look for the element with the data-cms-root attribute.
+    if (window.CMS ) {
+      window.CMS.init();
+    }
   </script>
 </body>
 </html>
