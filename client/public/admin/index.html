@@ -1,4 +1,4 @@
-<!doctype html>
+ <!-- <!doctype html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -13,3 +13,32 @@
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
+-->
+
+
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager</title>
+  <!-- Load Decap CMS script from CDN -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  
+  <!-- Optional: Load your custom preview styles if you have them -->
+  <!-- <link rel="stylesheet" href="preview.css" /> -->
+</head>
+<body>
+  <!-- The CMS UI will be rendered here -->
+  
+  <!-- CRITICAL FIX: Explicitly initialize the CMS to ensure it's ready for the OAuth token -->
+  <script>
+    // Check if the CMS object is available and initialize it
+    if (window.CMS ) {
+      window.CMS.init();
+    }
+  </script>
+</body>
+</html>
+
