@@ -1,0 +1,5 @@
+# Decap CMS Admin Rewrite Rule
+/admin/* /admin/index.html 200
+
+# Single Page Application (SPA) Fallback
+/* /index.html 200
