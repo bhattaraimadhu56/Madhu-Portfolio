@@ -4,18 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
-  <script>
-    if (window.CMS) {
-      window.CMS.registerEventListener({
-        name: 'preLogin',
-        handler: ({ user }) => {
-          if (user) {
-            document.location.href = "/admin/";
-          }
-        }
-      });
-    }
-  </script>
+
 
   <!-- Load Decap CMS script from CDN -->
 
@@ -23,5 +12,13 @@
 <body>
   <!-- The CMS UI will be rendered here automatically -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    if (window.location.search.includes('code=')) {
+      window.opener.postMessage({
+        'gitea-cms-auth': true,
+        'payload': window.location.search
+      }, window.location.origin);
+    }
+  </script>
 </body>
 </html>
