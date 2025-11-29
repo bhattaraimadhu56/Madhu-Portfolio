@@ -8,16 +8,6 @@
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </head>
 <body>
-  <!-- CRITICAL FIX: Add the root element with the explicit data-cms-root attribute -->
-  <div id="cms-root" data-cms-root></div>
-  
-  <!-- CRITICAL FIX: Initialize the CMS after the element is defined -->
-  <script>
-    // This script runs after the <div> is defined, which should be enough.
-    // The CMS will now look for the element with the data-cms-root attribute.
-    if (window.CMS ) {
-      window.CMS.init();
-    }
-  </script>
+  <!-- The CMS UI will be rendered here -->
 </body>
 </html>
