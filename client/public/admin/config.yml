@@ -2,10 +2,10 @@
 site_url: https://www.madhudata.com/
 
 backend:
-  name: test-repo
-  # repo: bhattaraimadhu56/Madhu-Portfolio
+  name: github
+  repo: bhattaraimadhu56/Madhu-Portfolio
   branch: main
-  # base_url: https://madhu-cms-auth.bhattaraimadhu56.workers.dev/
+
 
 
 
@@ -15,6 +15,37 @@ media_folder: "client/public/images"
 public_folder: "/images"
 
 collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "header"
+        label: "Header & Menu"
+        file: "client/public/content/header.json"
+        fields:
+          - {label: "Logo Text", name: "logo_text", widget: "string"}
+          - {label: "Menu Links", name: "menu_links", widget: "list", fields: [
+              {label: "Label", name: "label", widget: "string"},
+              {label: "Path", name: "path", widget: "string"}
+            ]}
+      - name: "footer"
+        label: "Footer"
+        file: "client/public/content/footer.json"
+        fields:
+          - {label: "Copyright Text", name: "copyright_text", widget: "string"}
+          - {label: "Social Links", name: "social_links", widget: "list", fields: [
+              {label: "Platform", name: "platform", widget: "string"},
+              {label: "URL", name: "url", widget: "string"}
+            ]}
+      - name: "profile"
+        label: "Profile & Contact"
+        file: "client/public/content/profile.json"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Title/Role", name: "title", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Phone", name: "phone", widget: "string", required: false}
+          - {label: "Location", name: "location", widget: "string", required: false}
+          - {label: "Profile Image", name: "profile_image", widget: "image"}
   - name: "blog"
     label: "Blog Posts"
     folder: "client/public/blog"
