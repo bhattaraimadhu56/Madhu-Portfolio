@@ -1,19 +1,20 @@
+# CRITICAL FIX: Top-level site_url to prevent login loop
+site_url: https://www.madhudata.com/
+
 backend:
   name: github
   repo: bhattaraimadhu56/Madhu-Portfolio
   branch: main
-  base_url: https://madhu-cms-auth.bhattaraimadhu56.workers.dev/  # Trailing slash added
+  base_url: https://madhu-cms-auth.bhattaraimadhu56.workers.dev/
   auth_endpoint: /auth
-  
-# The media folder and public folder paths are relative to the repository root.
-# Since your deployed site is the 'client/public' folder, the paths should be relative to that.
+
+# Paths are relative to the deployed site root (which is the 'client/public' folder )
 media_folder: "images"
 public_folder: "/images"
 
 collections:
   - name: "blog"
     label: "Blog Posts"
-    # Path is relative to the repository root (which is the deployed site root )
     folder: "blog"
     create: true
     slug: "{{slug}}"
@@ -26,7 +27,6 @@ collections:
 
   - name: "portfolio"
     label: "Portfolio Projects"
-    # Path is relative to the repository root
     folder: "portfolio"
     create: true
     slug: "{{slug}}"
@@ -44,7 +44,6 @@ collections:
     files:
       - name: "about"
         label: "About"
-        # Path is relative to the repository root
         file: "content/about.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
