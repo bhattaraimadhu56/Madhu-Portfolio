@@ -33,6 +33,10 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
+
+
+
+      # Final check
       - {label: "Technologies", name: "technologies", widget: "list"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Link", name: "link", widget: "string", required: false}
