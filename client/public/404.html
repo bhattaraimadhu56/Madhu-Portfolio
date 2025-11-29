@@ -4,16 +4,26 @@
     <meta charset="utf-8">
     <title>Page Not Found</title>
     <script>
-      // This script is the fix for the 404 error on direct URL access.
-      // It forces the static host (GitHub Pages) to load the main index.html file,
-      // which then allows the React router to take over and handle the path.
+      // This script is the FINAL fix for the 404 error on GitHub Pages.
+      // It checks for the special /admin path and redirects to the CMS file,
+      // otherwise it uses your existing logic for the main SPA routes.
       
-      // Calculate the relative path to the root index.html
-      var segmentCount = (window.location.pathname.split('/').length - 1);
-      var relativePath = segmentCount > 0 ? '../'.repeat(segmentCount - 1) : '';
+      var path = window.location.pathname;
       
-      // Redirect to the main application entry point
-      window.location.replace(relativePath + 'index.html');
+      // 1. CRITICAL FIX: Check for the /admin path
+      if (path.toLowerCase().startsWith('/admin')) {
+        // Redirect directly to the Decap CMS file
+        window.location.replace('/admin/index.html');
+      } 
+      // 2. Your existing SPA Fallback logic
+      else {
+        // Calculate the relative path to the root index.html
+        var segmentCount = (path.split('/').length - 1);
+        var relativePath = segmentCount > 0 ? '../'.repeat(segmentCount - 1) : '';
+        
+        // Redirect to the main application entry point
+        window.location.replace(relativePath + 'index.html');
+      }
     </script>
   </head>
   <body>
