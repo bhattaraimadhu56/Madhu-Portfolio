@@ -9,15 +9,14 @@ backend:
   auth_endpoint: auth
   site_domain: www.madhudata.com 
  
-
-# Paths are relative to the deployed site root (which is the 'client/public' folder )
-media_folder: "images"
+# Paths are relative to the REPOSITORY ROOT
+media_folder: "client/public/images"
 public_folder: "/images"
 
 collections:
   - name: "blog"
     label: "Blog Posts"
-    folder: "blog"
+    folder: "client/public/blog"
     create: true
     slug: "{{slug}}"
     fields:
@@ -29,16 +28,12 @@ collections:
 
   - name: "portfolio"
     label: "Portfolio Projects"
-    folder: "portfolio"
+    folder: "client/public/portfolio"
     create: true
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
-
-
-
-      # Final check
       - {label: "Technologies", name: "technologies", widget: "list"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Link", name: "link", widget: "string", required: false}
@@ -50,16 +45,9 @@ collections:
     files:
       - name: "about"
         label: "About"
-        file: "content/about.md"
+        file: "client/public/content/about.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Bio", name: "bio", widget: "text"}
           - {label: "Skills", name: "skills", widget: "list"}
           - {label: "Content", name: "body", widget: "markdown"}
-
-
-
-          # Final check
-
-
-          # Final check
