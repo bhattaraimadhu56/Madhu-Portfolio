@@ -5,7 +5,8 @@ backend:
   name: github
   repo: bhattaraimadhu56/Madhu-Portfolio
   branch: main
-  base_url: https://madhu-cms-auth.bhattaraimadhu56.workers.dev/auth
+  base_url: https://madhu-cms-auth.bhattaraimadhu56.workers.dev/
+
 
 
  
