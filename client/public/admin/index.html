@@ -4,14 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
-  <!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" data-netlify-site="https://madhudatacom.netlify.app"></script>
-
-
-
+  
+  <!-- 1. Load the Identity Widget script (required for the CMS to initialize the login process ) -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <!-- Include the script that builds the Netlify CMS UI -->
+  <!-- 2. Load the Decap CMS script (must be loaded after the identity widget ) -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 </body>
 </html>
