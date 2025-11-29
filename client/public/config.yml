@@ -1,0 +1,53 @@
+backend:
+  name: github
+  repo: bhattaraimadhu56/Madhu-Portfolio
+  branch: main
+  base_url: https://madhu-cms-auth.bhattaraimadhu56.workers.dev/  # Trailing slash added
+  auth_endpoint: /auth
+  
+# The media folder and public folder paths are relative to the repository root.
+# Since your deployed site is the 'client/public' folder, the paths should be relative to that.
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    # Path is relative to the repository root (which is the deployed site root )
+    folder: "blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+
+  - name: "portfolio"
+    label: "Portfolio Projects"
+    # Path is relative to the repository root
+    folder: "portfolio"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Technologies", name: "technologies", widget: "list"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Link", name: "link", widget: "string", required: false}
+      - {label: "Content", name: "body", widget: "markdown"}
+
+  - name: "about"
+    label: "About Page"
+    create: false
+    files:
+      - name: "about"
+        label: "About"
+        # Path is relative to the repository root
+        file: "content/about.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Bio", name: "bio", widget: "text"}
+          - {label: "Skills", name: "skills", widget: "list"}
+          - {label: "Content", name: "body", widget: "markdown"}
