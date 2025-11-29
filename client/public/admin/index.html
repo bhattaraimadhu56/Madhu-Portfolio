@@ -11,14 +11,16 @@
   <!-- CRITICAL FIX: Add the root element for the CMS to mount onto -->
   <div id="cms-root"></div>
   
-  <!-- CRITICAL FIX: Explicitly initialize the CMS -->
+  <!-- CRITICAL FIX: Ensure CMS.init( ) runs ONLY after the DOM is fully loaded -->
   <script>
-    if (window.CMS ) {
-      window.CMS.init({
-        // Optionally specify the element ID if it's not the default
-        // config: { local_backend: true }, // Example of passing config
-      });
-    }
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.CMS) {
+        window.CMS.init({
+          // Optionally specify the element ID if it's not the default
+          // config: { local_backend: true }, // Example of passing config
+        });
+      }
+    });
   </script>
 </body>
 </html>
