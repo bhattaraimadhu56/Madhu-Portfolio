@@ -4,6 +4,8 @@ backend:
   branch: main
   base_url: https://madhu-cms-auth.bhattaraimadhu56.workers.dev
   auth_type: pkce
+  site_url: https://www.madhudata.com/
+  site_domain: madhudata.com
   
   
 
