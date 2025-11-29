@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
   <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
+    if (window.CMS) {
+      window.CMS.registerEventListener({
+        name: 'preLogin',
+        handler: ({ user }) => {
+          if (user) {
             document.location.href = "/admin/";
-          });
+          }
         }
       });
     }
