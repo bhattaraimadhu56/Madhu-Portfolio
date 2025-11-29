@@ -2,10 +2,10 @@
 site_url: https://www.madhudata.com/
 
 backend:
-  name: github
-  repo: bhattaraimadhu56/Madhu-Portfolio
+  name: test-repo
+  # repo: bhattaraimadhu56/Madhu-Portfolio
   branch: main
-  base_url: https://madhu-cms-auth.bhattaraimadhu56.workers.dev/
+  # base_url: https://madhu-cms-auth.bhattaraimadhu56.workers.dev/
 
 
 
