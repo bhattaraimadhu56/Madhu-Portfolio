@@ -6,18 +6,18 @@
   <title>Content Manager</title>
   <!-- Load Decap CMS script from CDN -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  
-  <!-- Optional: Load your custom preview styles if you have them -->
-  <!-- <link rel="stylesheet" href="preview.css" /> -->
 </head>
 <body>
-  <!-- The CMS UI will be rendered here -->
+  <!-- CRITICAL FIX: Add the root element for the CMS to mount onto -->
+  <div id="cms-root"></div>
   
-  <!-- CRITICAL FIX: Explicitly initialize the CMS to ensure it's ready for the OAuth token -->
+  <!-- CRITICAL FIX: Explicitly initialize the CMS -->
   <script>
-    // Check if the CMS object is available and initialize it
     if (window.CMS ) {
-      window.CMS.init();
+      window.CMS.init({
+        // Optionally specify the element ID if it's not the default
+        // config: { local_backend: true }, // Example of passing config
+      });
     }
   </script>
 </body>
