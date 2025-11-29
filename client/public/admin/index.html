@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
   
-  <!-- 1. Load the Identity Widget script (required for the CMS to initialize the login process ) -->
+  <!-- 1. Load the Identity Widget script -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <!-- 2. Load the Decap CMS script (using the correct package name and latest stable version ) -->
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <!-- 2. Load the Decap CMS script with the explicit config path -->
+  <script 
+    src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"
+    data-config="/config.yml"
+  ></script>
 </body>
 </html>
