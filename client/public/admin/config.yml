@@ -6,7 +6,9 @@ backend:
   repo: bhattaraimadhu56/Madhu-Portfolio
   branch: main
   base_url: https://madhu-cms-auth.bhattaraimadhu56.workers.dev/
-  auth_endpoint: /auth
+  auth_endpoint: auth
+  site_domain: www.madhudata.com 
+ 
 
 # Paths are relative to the deployed site root (which is the 'client/public' folder )
 media_folder: "images"
