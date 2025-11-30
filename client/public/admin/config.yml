@@ -1,86 +1,19 @@
-# CRITICAL FIX: Top-level site_url to prevent login loop
-site_url: https://www.madhudata.com/
-
 backend:
   name: github
   repo: bhattaraimadhu56/Madhu-Portfolio
   branch: main
+  auth_scope: repo
+  client_id: Ov23liupDQLR8p2DroSY
+  client_secret: 2df320e3570067b6cea521b06f686db1545fcc4b
 
-
-
-
-
- 
-# Paths are relative to the REPOSITORY ROOT
-media_folder: "client/public/images"
-public_folder: "/images"
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
 
 collections:
-  - name: "settings"
-    label: "Site Settings"
-    files:
-      - name: "header"
-        label: "Header & Menu"
-        file: "client/public/content/header.json"
-        fields:
-          - {label: "Logo Text", name: "logo_text", widget: "string"}
-          - {label: "Menu Links", name: "menu_links", widget: "list", fields: [
-              {label: "Label", name: "label", widget: "string"},
-              {label: "Path", name: "path", widget: "string"}
-            ]}
-      - name: "footer"
-        label: "Footer"
-        file: "client/public/content/footer.json"
-        fields:
-          - {label: "Copyright Text", name: "copyright_text", widget: "string"}
-          - {label: "Social Links", name: "social_links", widget: "list", fields: [
-              {label: "Platform", name: "platform", widget: "string"},
-              {label: "URL", name: "url", widget: "string"}
-            ]}
-      - name: "profile"
-        label: "Profile & Contact"
-        file: "client/public/content/profile.json"
-        fields:
-          - {label: "Name", name: "name", widget: "string"}
-          - {label: "Title/Role", name: "title", widget: "string"}
-          - {label: "Email", name: "email", widget: "string"}
-          - {label: "Phone", name: "phone", widget: "string", required: false}
-          - {label: "Location", name: "location", widget: "string", required: false}
-          - {label: "Profile Image", name: "profile_image", widget: "image"}
-  - name: "blog"
-    label: "Blog Posts"
-    folder: "client/public/blog"
+  - name: "test"
+    label: "Test Content"
+    folder: "content/test"
     create: true
-    slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Content", name: "body", widget: "markdown"}
-      - {label: "Image", name: "image", widget: "image", required: false}
-
-  - name: "portfolio"
-    label: "Portfolio Projects"
-    folder: "client/public/portfolio"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Technologies", name: "technologies", widget: "list"}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Link", name: "link", widget: "string", required: false}
-      - {label: "Content", name: "body", widget: "markdown"}
-
-  - name: "about"
-    label: "About Page"
-    create: false
-    files:
-      - name: "about"
-        label: "About"
-        file: "client/public/content/about.md"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Bio", name: "bio", widget: "text"}
-          - {label: "Skills", name: "skills", widget: "list"}
-          - {label: "Content", name: "body", widget: "markdown"}
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "body", label: "Body", widget: "markdown" }
